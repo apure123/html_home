@@ -47,6 +47,12 @@ body{
     margin-top: 5px;
     color: #323232;
 }
+.siderdiv img{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    display: block;
+}
 
 /*右侧内容框的样式*/
 .contantdiv{
@@ -83,13 +89,64 @@ body{
     list-style-type: none;
     margin:auto;
 }
+/* 内容栏里面导航页盒子的样式 */
+.navi-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
 
+}
+.navi-container h2{
+    width: 100%;
+}
+.navi-container .box{
+    width: 100px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 20px;
+}
+.navi-container .box p{
+    margin: 10px;
+    color:slategrey;
+}
+.navi-container .box .img{
+    width: 100px;
+    height: 100px;
+    background-color: #93d5dc;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.2),
+    -18px -18px 30px rgba(255,255,255,0.2);
+    transition: box-shadow .2s ease-out;
+    
+}
+.navi-container .box .img:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 0px rgba(255, 255, 255, 0.2),
+    inset 18px 18px 30px rgba(0, 0, 0, 0.15),
+    inset -18px -18px 30px rgba(255, 255, 255, 0.2);
+    transition: box-shadow .2s ease-out;
+    
 
-img{
-    text-align: center;
-    width: 95%;
-    margin: auto;
-    display: block;
+}
+.navi-container .box .img img{
+    width: 60px;
+    transition: width .2s ease-out;
+}
+.navi-container .box .img:hover img{
+    width: 58px;
+    transition: box-shadow .2s ease-out;
+    
+
 }
 
 .pic{
