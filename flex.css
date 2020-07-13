@@ -1,0 +1,181 @@
+
+body{
+    background-color: #cdc9c9;
+    margin: 0px;
+    width: 100%;
+}
+.mainbody{
+    display: block;
+    font:1em/150% Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    background-color: #4540d5;
+    width: 940px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+/*头部标题的样式*/
+.navihead{
+    width: 960px;
+    margin: auto ;
+    text-align: center;
+
+}
+.navihead h2{
+    color: aliceblue;
+}
+/*侧边栏的样式*/
+.siderdiv{
+    width: 320px;
+    float: left;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.siderdiv audio{
+    width: 90%;
+    margin-top: 20px;
+}
+.siderdiv img{
+    border-radius: 10px;
+}
+.siderdiv p{
+    margin-top: 5px;
+    color: #323232;
+}
+
+/*右侧内容框的样式*/
+.contantdiv{
+    width: 600px;
+    float: right;
+    background-color: #93d5dc;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+
+
+}
+.contantdiv p{
+    display: block;
+    width: 100%;
+
+}
+.contantdiv a{
+    color: #323232;
+    text-decoration: none;
+}
+.contantdiv a:hover{
+    background-color: #323232;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+.contantdiv ul{
+    padding: 0px;
+}
+.contantdiv ul li{
+    padding: 10px;
+    list-style-type: none;
+    margin:auto;
+}
+
+
+img{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+
+.pic{
+    margin: auto;
+    width: 100%;
+}
+h1{
+    margin: auto;
+}
+
+
+
+.list{
+    width: 80%;
+    margin: auto;
+
+}
+/*当屏幕宽度小于980px的时候
+    此时屏幕像素不够按照最大的像素显示，但相对来说还是很宽，
+    所以等比例缩放
+    总内容94%
+    侧边栏35%
+    内容栏60%
+
+    需要注意的是，这里width不算padding那些，所以100%的话会超出去
+    用auto的话可以刚刚好占满
+*/
+@media screen and (max-width:980px){
+    .mainbody{
+        width: auto;
+    }
+    .navihead{
+        width: 99%;
+    }
+    .siderdiv{
+        width: 35%;
+        margin:auto;
+    }
+    .contantdiv{
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/*当屏幕宽度小于800px的时候
+    当成手机来调整
+    除掉背景的margin和圆角
+
+
+    需要注意的是，这里width不算padding那些，所以100%的话会超出去
+*/
+@media screen and (max-width:800px){
+
+    .mainbody{
+        margin: 0px;
+        border-radius: 0px;
+    }
+    .siderdiv{
+        width: auto;
+        float: none;
+        margin: 20px auto;
+    }
+    .contantdiv{
+        width: auto;
+        float: none;
+        margin: 20px auto;
+    }
+    .contantdiv video{
+        width: 90%;
+        border-radius: 5px;
+    }
+}
+
+/*当屏幕宽度小于480px的时候
+    当成手机来调整
+
+*/
+@media screen and (max-width:480px){
+
+    .siderdiv{
+
+    }
+
+}
+
+
+img{
+    margin: auto;
+}
